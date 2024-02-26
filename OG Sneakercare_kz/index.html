@@ -28,11 +28,12 @@
         </div>
         <div class="catalogs">
             <h1 class="head-catalog">Catalog</h1>
+            <!-- FIRST CATALOG ITEM -->
             <div class="catalog-item">
                 <div class="image-item">
                     <div class="move">
                         <p class="span2">Jordan 1</p>
-                        <button class="span1"><span>more</span></button>
+                        <button id = "btn" class="span1">more</button>
                     </div>
                 </div>
                 <div class="catalog-description">
@@ -136,5 +137,13 @@
         </div>
     </div>
     <script>sdjkbvksbksn</script>
+        <script type = "text/javascript">
+        let progress = document.getElementById('progressbar');
+        let totalheight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function(){
+            let progressheight = (window.pageYOffset / totalheight) * 100;
+            progress.style.height = progressheight + "%";
+        }
+    </script>
 </body>
 </html>
