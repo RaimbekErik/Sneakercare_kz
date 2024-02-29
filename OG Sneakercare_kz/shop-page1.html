@@ -29,30 +29,56 @@
                 <p class = "name-description">Blazer High</p>
                 <p class = "price">44$</p>
                 <p class = "text-description">The Nike Blazer is a monument in the history of Nike Basketball. The design was first popularized by NBA great George "The Iceman" Gervin in the 1970s and is now a classic winter-lifestyle sneaker.</p>
-                
+                <div class="sizes">
+                    <p class = "price">Sizes: US</p>
+                    <div class="size-container">
+                        <div class="size-item">7</div>
+                        <div class="size-item">8</div>
+                        <div class="size-item">9</div>
+                        <div class="size-item">10</div>
+                        <div class="size-item">11</div>
+                        <div class="size-item">12</div>
+                    </div>
+                    <p class = "size-guide">Size guide</p>
+                    <button type="submit" id="add-button" onclick="changeText()">Add to shopping bag</button>
+                </div>
             </div>
-
         </div>
+    </div>    
 
         <div class="recommendations">
             <p class = "text-recommend">You may also like:</p>
             <div class="image-recommend">
-                <img src = "images/Stan_Smith/Frame4.png" class = "recommend-icon">
-            </div>
-            <div class="image-recommend">
-                <img src = "images/Jordan_1_Red/Frame3.png" class = "recommend-icon">
-            </div>
-            <div class="image-recommend">
-                <img src = "images/Blazer_High_c/Frame5.png" class = "recommend-icon">
-            </div>
-            <div class="image-recommend">
-                <img src = "images/Yeezy_Boost_V2_350_Triple_White/Group_1.png" class = "recommend-icon">
+                <div class="recommend-item">
+                    <img src = "images/Stan_Smith/Frame4.png" class = "recommend-icon">
+                    <p class = "recommend-name">Stan Smith Red</p>
+                    <p class = "recommend-price">35 $</p>
+                    <p class = "recommend-brand">Adidas</p>
+                </div>
+                <div class="recommend-item">
+                    <img src = "images/Jordan_1_Red/Frame3.png" class = "recommend-icon">
+                    <p class = "recommend-name">Jordan 1</p>
+                    <p class = "recommend-price">35 $</p>
+                    <p class = "recommend-brand">Nike</p>
+                </div>
+                <div class="recommend-item">
+                    <img src = "images/Blazer_High_c/Frame5.png" class = "recommend-icon">
+                    <p class = "recommend-name">Blazer Low</p>
+                    <p class = "recommend-price">35 $</p>
+                    <p class = "recommend-brand">Nike</p>
+                </div>
+                <div class="recommend-item">
+                    <img src = "images/Yeezy_Boost_V2_350_Triple_White/Group_1.png" class = "recommend-icon">
+                    <p class = "recommend-name">YE Boost V2 350</p>
+                    <p class = "recommend-price">35 $</p>
+                    <p class = "recommend-brand">Adidas</p>
+                </div>
             </div>
                 
         </div>
 
         <div class="footer">
-            <h1 class="head-catalog">Contacts</h1>
+            <h1 class="footer-text">Contacts</h1>
             <div class="container-footer">
                 <p class="info-catalog">
                     Алматы, Жетысу-2, дом 37, 050000
@@ -69,9 +95,18 @@
                 </div>
             </div>
         </div>
+    <script>
+        function changeText(){
+            var button = document.getElementById("add-button");
+            if (button.innerHTML == "Add to shopping bag"){
+                button.innerHTML = "Added ✓";
+                button.style.backgroundColor = "green";
+            }else{
+                button.innerHTML = "Add to shopping bag";
+                button.style.backgroundColor = "";
+            }
 
-
-        
-    </div>
+        }
+    </script>
 </body>
 </html>
