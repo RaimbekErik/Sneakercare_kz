@@ -43,7 +43,6 @@ body {
 
 .images{
     min-width: 83.125rem;
-    grid-template-columns: auto auto auto; 
     flex-wrap: wrap; 
     justify-content: flex-start;
     float: left;
@@ -80,19 +79,125 @@ body {
     font-size: 20px;
 }
 
+.size-container{
+    display: grid;
+    grid-template-columns: 140px 140px 140px;
+    grid-template-rows: 140px 140px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+
+}
+
+.size-item{
+    border: 1px groove #929292;;
+    width: 138px;
+    height: 138px;
+    border-radius: 2rem;
+    background-color: #f5f5f5;
+    font-size: 24px;
+    font-weight: 400;
+    color: #929292;
+    font-family: Inter;
+    text-align: center;
+    line-height: 140px;
+    padding: 0px;
+}
+
+.size-item:hover{
+    color: #ffffff;
+    background-color: #FF7427;
+    transition: 0.5s;
+    transform: translateY(-4px);
+}
+
+.size-guide{
+    font-weight: 400px;
+    font-size: 20px;
+    text-decoration: underline;
+    color: #929292;
+}
+
+#add-button{
+    width: 460px;
+    height: 64px;
+    border-radius: 1rem;
+    border: hidden;
+    background-color: #FF7427;
+    color:#F5F5F5;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: Inter;
+    text-align: center;
+    line-height: 64px;
+}
+
+#add-button:hover{
+    transition: 0.5s;
+    transform: translateY(-4px);
+    background-color: #ff8747;
+}
+
+.recommendations{
+    margin-left: 80px;
+    margin-top: 70px;
+    width: 83.125rem;
+}
+
+.text-recommend{
+    color: #FA8F21;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
 .image-recommend{
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    grid-gap: 14px; 
-    max-height: 300px;
+    grid-template-columns: 280px 280px 280px 280px;
+    grid-column-gap: 14px;
 }
+
+.recommend-item{
+    border: 2px solid #F5F5F5;
+    width: 280px;
+}
+
 .recommend-icon{
     width: 280px;
     height: 280px;
 }
 
+.recommend-item:hover{
+    border-color: #FF7427;
+    transform: translateY(-5px);
+}
 
+.recommend-name{
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 3px;
+}
 
+.recommend-price{
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: right;
+    margin: 3px;
+}
+
+.recommend-brand{
+    color: #929292;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 3px;
+}
+
+.footer-text{
+    color: #E6631A;
+    font-size: 144px;
+    font-weight: bold;
+    margin: 80px;
+}
 
 .container-footer {
     height: 24.1875rem;
