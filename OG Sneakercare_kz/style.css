@@ -463,5 +463,16 @@ button:hover{
 
 /*mobiles*/
 @media screen and (max-width: 480px) {
-    
+    /*CATALOGS*/
+
+    .head-catalog{
+        margin: 9.16vw 4.071vw;
+    }
+
+    .catalog-item{
+        width: 91.858vw;
+        height: 103.308vw;
+        border-radius: 5.089vw;
+        margin:9.16vw 4.071vw;
+    }
 }
