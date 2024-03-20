@@ -482,7 +482,7 @@ button:hover{
 
     .catalog-item {
         width: 41.699vw;
-        height: 47.461vw;
+        height: 50.461vw;
         margin: 0;
     }
 
@@ -491,14 +491,14 @@ button:hover{
         top: auto;
         right: 0;
         width: 100%;
-        height: 19.727vw;
+        height: 22.727vw;
         display: flex;
         justify-content: center;
         flex-direction: column;
     }
 
     .catalog-description2, .catalog-description4{
-        height: 19.727vw;
+        height: 22.727vw;
         bottom: 0;
         top: auto;
         right: 0;
@@ -668,7 +668,7 @@ button:hover{
     .catalog-item {
         border-radius: 5.089vw;
         width: 88.281vw;
-        height: 103.308vw;
+        height: 106.308vw;
         margin: 0;
     }
 
@@ -677,14 +677,14 @@ button:hover{
         top: auto;
         right: 0;
         width: 100%;
-        height: 42.239vw;
+        height: 45.239vw;
         display: flex;
         justify-content: center;
         flex-direction: column;
     }
 
     .catalog-description2, .catalog-description4{
-        height: 42.239vw;
+        height: 45.239vw;
         bottom: 0;
         top: auto;
         right: 0;
@@ -806,10 +806,21 @@ button:hover{
 
     /*THIRD CONTAINER DESIGN*/
 
+    .third-container{
+        width: 100%;
+        height: 109.924vw;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/Blazer_High_c/Frame5.png);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    
     .sub-third-container{
-        width: 42.188vw;
-        height: 39.427vw;
-        margin-left: 5.859vw;
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        width: 91.858vw;
+        height: 72.265vw;
         background: #64646457;
         border-radius: 5.089vw;
         backdrop-filter: blur(30px);
