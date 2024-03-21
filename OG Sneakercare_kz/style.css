@@ -651,7 +651,7 @@ button:hover{
     .catalogs {
         display: flex;
         width: 88.281vw;
-        height: 215.776vw;
+        height: 224.776vw;
         margin: 5.859vw auto;
         flex-direction: column;
         justify-content: space-between;
@@ -810,9 +810,10 @@ button:hover{
         width: 100%;
         height: 109.924vw;
         background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/Blazer_High_c/Frame5.png);
-        background-size: cover;
+        background-size: 160%;
         background-position: center;
         position: relative;
+        margin: 11.267vw 0;
     }
     
     .sub-third-container{
@@ -824,5 +825,39 @@ button:hover{
         background: #64646457;
         border-radius: 5.089vw;
         backdrop-filter: blur(30px);
+        display: inline-block;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        
+    }
+
+    #blazerHighColor1 {
+        color: #FF7427;
+        margin-top: 8.142vw;
+    }
+
+    .third-container-p{
+        width: 79.644vw;
+        margin-top: 3.053vw;
+        font-size: 3.053vw;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        font-family: Inter;
+        font-weight: 400;
+        color: #f5f5f5;
+    }
+    
+    .third-container-more{
+        background-color: #788AA9;
+        color: #f5f5f5;
+        margin: 6.107vw auto 6.107vw auto;
+        padding: 0px;
+        width: 35.338vw;
+        height: 10.178vw;
+        border-radius: 5.089vw;
+        font-size: 4.071vw;
+        border: none;
+        font-weight: 600;
     }
 }
